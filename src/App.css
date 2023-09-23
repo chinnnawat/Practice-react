@@ -1,38 +1,86 @@
-.App {
+/*Page*/
+.page{
+  background-color: #696969;
+}
+.page h1{
   text-align: center;
+  color: gold;
+  font-size: 36px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Food-Card*/
+.card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: solid 2px;
+  border-radius: 10px;
+  width: 60%;
+  background-color: rgba(252,236,214,255);
+}
+.menu{
+  display: flex;
+  gap: 5px;
+}
+.menu .detail{
+  width: fit-content;
+}
+.picture{
+  width: 250px;
+  height: fit-content;
+}
+.picture img{
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/*Font*/
+.detail h2{
+  font-size: 24px;
+  font-weight: bold;
+}
+.detail h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+.detail h5{
+  font-size: 14px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/*Button*/
+.container_button{
+  display: flex;
+}
+.button button{
+  cursor: pointer;
+}
+.button #click{
+  background-color: #eef0f0;
+  height: 40px;
+  margin: 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.container_button #showClick{
+  text-align: center;
+  width: 70px;
+  cursor: pointer;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border: solid 3px #4b3943;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #7ae503;
 }
